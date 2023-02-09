@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".five">
+
+    <TextView
+        android:id="@+id/ask05"
+        android:layout_width="348dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="73dp"
+        android:text="5.คำสั่ง TIME กับ คำสั่ง NOW ต่างกันอย่างไร"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/a5"
+        android:layout_width="344dp"
+        android:layout_height="81dp"
+        android:text="TIME เป็นการแปลงค่าตัวเลขจาก ชั่วโมง นาที วินาที ให้เป็นเวลา NOW เป็นการดึงข้อมูลวันเวลาปัจจุบันจากเครื่องมาแสดงในเซลล์ "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <Button
+        android:id="@+id/c5"
+        android:layout_width="346dp"
+        android:layout_height="75dp"
+        android:text="TIME เป็นการแปลงค่าตัวเลขจาก ชั่วโมง นาที วินาที ให้เป็นเวลา NOW เป็นการหาค่าวันที่วันสุดท้ายของเดือนก่อนหน้าหรือเดือนถัดไป "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.771" />
+
+    <Button
+        android:id="@+id/d5"
+        android:layout_width="349dp"
+        android:layout_height="65dp"
+        android:text="ไม่มีข้อใดถูกต้อง"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="343dp"
+        android:layout_height="87dp"
+        android:text="TIME เป็นการหาค่าวันที่เดียวกันของเดือนก่อนหน้าหรือเดือนถัดไป NOW เป็นการดึงข้อมูลวันเวลาปัจจุบันจากเครื่องมาแสดงในเซลล์ "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.624" />
+</androidx.constraintlayout.widget.ConstraintLayout>

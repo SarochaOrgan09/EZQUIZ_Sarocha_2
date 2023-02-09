@@ -5,19 +5,19 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import com.example.ezquiz_sarocha_2.one.Companion.index
-import kotlinx.android.synthetic.main.activity_two.*
+import kotlinx.android.synthetic.main.activity_seven.*
 
-class two : AppCompatActivity() {
+class seven : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_two)
+        setContentView(R.layout.activity_seven)
 
-        a2.setOnClickListener {
+        a7.setOnClickListener {
             val builder = AlertDialog.Builder(this).apply {
                 setTitle("Answer Incorrect !!")
                 setMessage("The answer is incorrect.")
                 setPositiveButton("next question.",{dialog,which ->
-                    val intent = Intent(this@two, three::class.java)
+                    val intent = Intent(this@seven, eight::class.java)
                     startActivity(intent)
                 })
             }
@@ -25,12 +25,12 @@ class two : AppCompatActivity() {
             alertDialog.show()
         }
 
-        b2.setOnClickListener {
+        b7.setOnClickListener {
             val builder = AlertDialog.Builder(this).apply {
                 setTitle("Answer Incorrect !!")
                 setMessage("The answer is incorrect.")
                 setPositiveButton("next question.",{dialog,which ->
-                    val intent = Intent(this@two, three::class.java)
+                    val intent = Intent(this@seven, eight::class.java)
                     startActivity(intent)
                 })
             }
@@ -38,18 +38,18 @@ class two : AppCompatActivity() {
             alertDialog.show()
         }
 
-        c2.setOnClickListener {
-           index++
-            val intent = Intent(this@two, three::class.java)
+        c7.setOnClickListener {
+            index++
+            val intent = Intent(this@seven, eight::class.java)
             startActivity(intent)
         }
 
-        d2.setOnClickListener {
+        d7.setOnClickListener {
             val builder = AlertDialog.Builder(this).apply {
                 setTitle("Answer Incorrect !!")
                 setMessage("The answer is incorrect.")
                 setPositiveButton("next question.",{dialog,which ->
-                    val intent = Intent(this@two, three::class.java)
+                    val intent = Intent(this@seven, eight::class.java)
                     startActivity(intent)
                 })
             }

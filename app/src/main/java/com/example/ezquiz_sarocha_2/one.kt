@@ -7,9 +7,18 @@ import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_one.*
 
 class one : AppCompatActivity() {
+    companion object{
+        var index = 0
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_one)
+
+        a1.setOnClickListener {
+             index++
+            val intent = Intent(this@one, two::class.java)
+            startActivity(intent)
+        }
 
         b1.setOnClickListener {
             val builder = AlertDialog.Builder(this).apply {
